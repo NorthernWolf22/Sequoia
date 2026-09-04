@@ -1,0 +1,22 @@
+/* base is intended for styling HTML elements. */
+
+@layer base {
+    button {
+        @apply outline-transparent px-8 py-4 bg-brand-900 text-white tracking-wider;
+        @apply hover:bg-brand-500;
+    }
+}
+
+
+@layer components {
+    .btn--accordion {
+        @apply text-lg lg:text-xl text-black bg-white outline-transparent px-8 py-4 tracking-normal flex justify-start items-center w-full;
+        @apply hover:text-brand-500;
+    }
+
+    .btn--icon {
+        @apply flex justify-center items-center w-10 h-10 bg-white text-brand-900 p-0;
+        @apply hover:text-brand-500;
+        @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2;
+    }
+}

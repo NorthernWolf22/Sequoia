@@ -1,0 +1,15 @@
+/* components is intended for styling re-usable classes to prevent repetition */
+
+@layer components {
+    .mod-space-sm {
+        @apply py-6;
+    }
+
+    .mod-space-md {
+        @apply py-10 md:py-15 xl:py-20;
+    }
+
+    .mod-space-lg {
+        @apply py-18 md:py-22 xl:py-32;
+    }
+}

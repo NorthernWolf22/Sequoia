@@ -1,0 +1,7 @@
+/* components is intended for styling re-usable classes to prevent repetition */
+
+@layer components {
+    .cont {
+        @apply mx-auto w-full max-w-335 px-4;
+    }
+}
