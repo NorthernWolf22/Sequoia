@@ -27,7 +27,7 @@ function ServicesModule({ accordion }: ServicesModuleProps) {
     //This check filters out any accordion items whose properties are null, undefined, false, 0, or empty strings preventing bad data from reaching the UI.
     const validAccordionItems = accordion.items.filter(
         (i) => i.id && i.label && i.content && i.icon
-    ); 
+    );
 
     const toggleItem = (id: number): void => {
         setActiveId(activeId === id ? null : id);

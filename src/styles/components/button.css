@@ -7,7 +7,7 @@
     }
 }
 
-
+/* components is intended for styling re-usable classes to prevent repetition */
 @layer components {
     .btn--accordion {
         @apply text-lg lg:text-xl text-black bg-white outline-transparent px-8 py-4 tracking-normal flex justify-start items-center w-full;

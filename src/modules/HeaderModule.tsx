@@ -10,9 +10,9 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function HeaderModule() {
-    const [isNavOpen, setIsNavOpen] = useState(false);
+    const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
 
-    const toggleMenu = () => setIsNavOpen((prevIsNavOpen) => !prevIsNavOpen);
+    const toggleMenu = () : void => setIsNavOpen((prevIsNavOpen) => !prevIsNavOpen);
 
     //Ensures the menu closes whenever the user clicks a menu option to navigate to a new page
     const handleNavLinkClick = () :void => {
