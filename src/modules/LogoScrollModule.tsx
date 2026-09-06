@@ -1,6 +1,6 @@
 "use client";
 
-import { useScroll } from "motion/react";
+import { MotionValue, useScroll } from "motion/react";
 
 //model types
 import { Logo, LogoRow } from "@/generated/prisma/client";
@@ -13,7 +13,7 @@ type LogoScrollModuleProps = {
 };
 
 function LogoScrollModule({ rows }: LogoScrollModuleProps) {
-    const { scrollY } = useScroll();
+    const { scrollY }: { scrollY: MotionValue<number> } = useScroll();
 
     //1. If there are no rows, do not render module
     if (!rows.length) {
